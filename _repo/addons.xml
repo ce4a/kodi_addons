@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="repository.sergep" name="SergeP KODI Addons" version="0.1.0" provider-name="SergeP">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="SergeP KODI Addons">
+            <info compressed="false">https://raw.githubusercontent.com/ce4a/kodi_addons/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ce4a/kodi_addons/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ce4a/kodi_addons/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Utilites</summary>
+            <description>The description can be longer. Using [CR] you can create a newline. The use of other markup is not advised.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.helper"
+	   name="Cmd Utils"
+	   version="1.0.0"
+	   provider-name="sergep">
+	<requires>
+		<import addon="xbmc.python" version="2.5.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="script.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">KODI utils</summary>
+		<description lang="en">KODI utils</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<news>Updated the addon to use new addon.xml metadata</news>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+</addons>
